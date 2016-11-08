@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+}
+
+body{
+	background-color: #DC143C;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+}
+
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.banner-size{
+	background-color: #000000;
+	background-image: url(https://thedinowhisperer.files.wordpress.com/2015/11/space.jpg);
+	background-blend-mode: luminosity;
+	background-position: top;
+	background-size: cover;
+}
+
+.banner-size, .article{
+	padding: 8vw 0px;
+	text-align: center;
+}
+
+.banner-size h4{
+	margin-bottom: 50px;
+}
+
+nav{
+	background: #333333;
+}
+
+h1, h2 {
+	font-family: 'Megrim', cursive;
+	color: #DC143C;
+}
+
+h1, h2, h4{
+	text-transform: uppercase;
+	display: block;
+}
+
+.neutral{
+	color: #333333;
+}
+
+.warning{
+	color: #DC4368;
+}
+
+h1{
+	font-size: 15vw;
+}
+
+h2 {
+	font-size: 8vw;
+}
+
+h4{
+	font-size: 1.4vw;
+	letter-spacing: 1.5vw;
+}
+
+nav ul, footer ul{
+	list-style-type: none;
+	padding: 0; 
+}
+
+nav a, footer a{
+	text-decoration: none;
+	text-align: center;
+	color: slategray;
+	display: block;
+	padding: 15px;
+}
+
+nav a:hover, footer a:hover{
+	background-color: #555555;
+	color: #ffffff;
+}
+
+/*nav #hamburger{
+	display: none;
+}*/
+
+nav #active-link a{
+	color: #DC4368;
+}
+
+.button{
+	background-color: #DC143C;
+	padding: 15px;
+	/*font-weight: 600;*/
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #cccccc;
+}
+
+.button:hover{
+	color: #ffffff;
+	background-color: #DC4368;
+}
+
+.article{
+	background-color: #000000;
+	text-align: center;
+	/*display: flex;*/
+}
+
+.box{
+	display: flex;
+	margin: 10px 0px;
+	padding: 50px 0px;
+}
+
+.box .txt-container{
+	/*display: inline-block;*/
+	text-align: left;
+	flex-grow: 1;
+	line-height: 2;
+	/*padding: 15px 0px;*/
+	/*background-color: yellow;*/
+}
+
+.box .txt-container p{
+	padding: 0vw 2vw;
+}
+
+.box .img-container{
+	flex-grow: 1;
+	/*background-color: blue;*/
+}
+
+.box .img-container img{
+	width: 100%;
+}
+
+footer{
+	background-color: #000000;
+	color: #cccccc;
+}
+
+footer ul{
+	display: flex;
+}
+
+/*Flexbox here*/
+@media screen and (min-width: 768px){
+	nav ul{
+		display: flex;
+	}
+
+	nav li{
+		flex: 1 1 0;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 768px){
+/*	nav #hamburger{
+		display: inline-flex;
+	}*/
+
+/*	nav .menu{
+		display: none;
+	}*/
+
+	.banner-size{
+		position: fixed;
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	.box .img-container{
+		display: none;
+	}
+
+	.box .txt-container{
+		width: 100%;
+	}
+
+	footer{
+		display: none;
+	}
+}
