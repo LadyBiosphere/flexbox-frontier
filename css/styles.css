@@ -92,8 +92,10 @@ nav #active-link a{
 }
 
 .button{
+	display: inline-block;
 	background-color: #DC143C;
 	padding: 15px;
+	margin: 15px 0px;
 	/*font-weight: 600;*/
 	text-transform: uppercase;
 	text-decoration: none;
@@ -103,6 +105,15 @@ nav #active-link a{
 .button:hover{
 	color: #ffffff;
 	background-color: #DC4368;
+}
+
+.txt-panel{
+	background-color: #000000;
+	padding: 2vw;
+	margin: 0 auto;
+	width: 50%;
+	flex-grow: 1;
+	line-height: 2;
 }
 
 .article{
@@ -142,10 +153,17 @@ nav #active-link a{
 footer{
 	background-color: #000000;
 	color: #cccccc;
+	display: flex;
+	justify-content: space-between;
 }
 
 footer ul{
 	display: flex;
+}
+
+footer ul li {
+	flex: 1 1 0;
+	/*display: flex;*/
 }
 
 /*Flexbox here*/
@@ -184,6 +202,9 @@ footer ul{
 	}
 
 	footer{
-		display: none;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		right: 0;
 	}
 }
